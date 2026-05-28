@@ -1,0 +1,16 @@
+{
+  "name": "khan-trade-x-bot",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "node --check index.js && node --check config.js && node --check db.js && node --check flow.js && node --check messages.js && node --check keyboards.js && echo 'Build OK'"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.106.2",
+    "axios": "^1.16.1",
+    "dotenv": "^17.4.2",
+    "telegraf": "^4.16.3"
+  }
+}
